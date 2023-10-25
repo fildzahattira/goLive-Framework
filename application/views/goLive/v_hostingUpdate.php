@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Food Menu</title>
+    <title>Update Hosting</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/css@3.css">
     <link href="<?php echo base_url() ?>assets/css/bootstrap.min.css" rel="stylesheet">
 </head>

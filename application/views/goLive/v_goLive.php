@@ -199,7 +199,7 @@
               <li>Database <b><?php echo ($data->num_database)?></b></li>
               <li>Price only <b><?php echo price($data->harga)?></b>/month</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a class="me-3 py-2 link-body-emphasis text-decoration-none" href="<?php echo base_url('goLive/pembelian_insert');?>">ORDER</a></button>
+            <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="<?php echo base_url('goLive/pembelian_insert');?>"><button type="button" class="w-100 btn btn-lg btn-outline-primary">ORDER</button></a>
           </div>
         </div>
       </div>
@@ -212,9 +212,9 @@
         <thead>
           <tr>
             <th style="width: 34%;"></th>
-            <th style="width: 22%;">Free</th>
-            <th style="width: 22%;">Pro</th>
-            <th style="width: 22%;">Enterprise</th>
+            <th style="width: 22%;">HostingA</th>
+            <th style="width: 22%;">HostingB</th>
+            <th style="width: 22%;">HostingC</th>
           </tr>
         </thead>
         <tbody>
