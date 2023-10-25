@@ -23,7 +23,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/ci2023/';
+$config['base_url'] = 'http://localhost/uts-framework/21081010148/';
+
 
 /*
 |--------------------------------------------------------------------------
