@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------------
@@ -52,3 +52,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'goLive';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['Fildzah-Attira/home'] = 'goLive/index';
+$route['Fildzah-Attira/dataHosting'] = 'goLive/hosting_index';
+$route['Fildzah-Attira/dataPembelian'] = 'goLive/pembelian_index';
+$route['Fildzah-Attira/insertHosting'] = 'goLive/hosting_insert';
+$route['Fildzah-Attira/insertPembelian'] = 'goLive/pembelian_insert';
+$route['Fildzah-Attira/updateHosting/(:num)'] = 'goLive/hosting_update/$1';
+$route['Fildzah-Attira/updatePembelian/(:num)'] = 'goLive/pembelian_update/$1';
+$route['Fildzah-Attira/deleteHosting/(:num)'] = 'goLive/hosting_delete/$1';
+$route['Fildzah-Attira/deletePembelian/(:num)'] = 'goLive/pembelian_delete/$1';
+
+
+
+
+
+
+

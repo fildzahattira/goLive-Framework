@@ -9,7 +9,8 @@ class goLive extends CI_Controller
     function index()
     {
         $data['detail_hosting'] = $this->goLiveModel->getData_hosting();
-        $this->load->view('goLive/v_goLive', $data);
+        // $this->load->view('goLive/v_goLive', $data);
+        $this->template->use_template('goLive/v_goLive', $data);
     }
     function hosting_index()
     {
@@ -30,7 +31,7 @@ class goLive extends CI_Controller
                     INSERT ERROR!
                    </div>');
             }
-            redirect('goLive/hosting_index');
+            redirect('Fildzah-Attira/dataHosting');
         } else {
             $data['title'] = "ADD NEW DATA";
             $this->load->view('goLive/v_hostingForm', $data);
@@ -50,7 +51,7 @@ class goLive extends CI_Controller
                     UPDATE ERROR!
                    </div>');
             }
-            redirect('goLive/hosting_index');
+            redirect('Fildzah-Attira/dataHosting');
         } else {
             $data['title'] = "UPDATE DATA";
             $data['detail_hosting'] = $this->goLiveModel->get_one($id_hosting);
@@ -69,7 +70,7 @@ class goLive extends CI_Controller
                 DELETE SUCCESS!
                </div>');
         }
-        redirect('goLive/hosting_index');
+        redirect('Fildzah-Attira/dataHosting');
     }
     function pembelian_index()
     {
@@ -89,7 +90,7 @@ class goLive extends CI_Controller
                 $this->session->set_flashdata('msg', '<div class="alert alert-success" role="alert">
                     NAMA DOMAIN SUDAH ADA!
                     </div>');
-                redirect('goLive/pembelian_insert');
+                redirect('Fildzah-Attira/insertHosting');
             }
 
 
@@ -104,7 +105,7 @@ class goLive extends CI_Controller
                     </div>');
             }
 
-            redirect('goLive/pembelian_index');
+            redirect('Fildzah-Attira/dataPembelian');
         } else {
             $data['title'] = "ORDER FORM";
             $this->load->view('goLive/v_pembelianForm', $data);
@@ -125,7 +126,7 @@ class goLive extends CI_Controller
                     UPDATE ERROR!
                    </div>');
             }
-            redirect('goLive/pembelian_index');
+            redirect('Fildzah-Attira/dataPembelian');
         } else {
             $data['title'] = "UPDATE DATA";
             $data['detail_pembelian'] = $this->goLiveModel->get_one_pembelian($k_pembelian);
@@ -144,6 +145,6 @@ class goLive extends CI_Controller
                 DELETE SUCCESS!
                </div>');
         }
-        redirect('goLive/pembelian_index');
+        redirect('Fildzah-Attira/dataPembelian');
     }
 }
